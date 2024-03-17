@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         img{
+            display: block;margin-left: auto;margin-right:auto ;
+        }
+        input{
+            border: 2px solid;
+            background-color: rgb(226, 226, 226);
+            border-radius: 8px;
+            text-align: center;
+        }
+       
+        label{
+font-family:cursive; color: rgb(167, 167, 167);
+        }
+        body{
+            background-image: url(./restro2.jpg);
+        }
+    </style>
+</head>
+<body>
+    <br><br><br><br><br><br><br><br>
+    <img src="./bawachi.png" width="500px">
+    <br>
+    <h2 style="text-align: center;color: rgb(167, 31, 7); font-family: cursive;"><b>CREATE NEW ACCOUNT</b></h2>
+    <form style="text-align: center;">
+        <label for="name">ENTER YOUR FULL NAME:</label>
+        <input type="text" id="name" placeholder="Full Name" name="fname" required autofocus> 
+        <!-- <input type="text" id="name" placeholder="second name" name="sname" required > -->
+<br>
+<br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <label for="userid">ENTER NEW USER ID:</label>
+        <input type="text" id="userid" placeholder="User ID" name="user" required>
+
+        <br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <label for="email"> ENTER YOUR EMAIL:</label>
+        <input type="email" id="email" placeholder="EMAIL" name="email"  required>
+<br>
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;<label for="date">DATE OF BIRTH:</label>
+<input type="date" id="date" name="DOB" required >
+<br>
+<br>
+<label for="tel">ENTER YOUR MOBILE NO:</label>
+<input type="tel" placeholder="Mobile Number" id="tel" name="telno" pattern="[0-9]{10}" required>
+<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label>SELECT YOUR GENDER:</label>
+<input type="radio" name="gender" id="male" value="male" required>
+<label for="male">Male</label>
+<input type="radio" name="gender" id="female" value="Female"required>
+<label for="female">Female</label>
+<input type="radio" name="gender" id="others" value="Others" required>
+<label for="others">Others</label>
+<br>
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="password">CHOOSE A PASSWORD:</label>
+<input type="password" placeholder="Password" id="password" name="password" required>
+<br>
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="checkbox" id="check"  name="checkbox" value="agree" required>
+<label for="check">I Have Read Every Terms and Hereby to Agree the Terms & Conditions</label>
+<br>
+<br>
+<br>
+<input type="submit" value="CREATE NEW ACCOUNT" formaction="./restro.html">
+
+</form>
+</body>
+</html>
